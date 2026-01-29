@@ -1,6 +1,6 @@
 # WEB102 Prework - *Name of App Here*
 
-Submitted by: **Your Name Here**
+Submitted by: **Marco Jimenez**
 
 **Name of your app** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
@@ -35,6 +35,9 @@ GIF created with ...
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+
+
 
 ## License
 
