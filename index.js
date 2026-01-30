@@ -192,11 +192,11 @@ const numOfUnfunded = unFundedGames.length;
 // create a string that explains the number of unfunded games using the ternary operator
 // using ternary operator I would say the NumOfUnFunded Determining whether if there is enough funds for the games
 const displayStr = 
-    `<p>A total of $${TotalRaised.toLocaleString()} has been raised for ${
+    `<p>A total of $${TotalRaised.toLocaleString()} has been raised for ${TotalNames} games. ${
 
         numOfUnfunded > 0
         ? `Currently, ${numOfUnfunded} games remain unfunded. We need your help!`
-        : `All games have been fully funded. Thank you for your support!`} games. Currently, ${numOfUnfunded}
+        : `All games have been fully funded. Thank you for your support!`}.
 
     </p>`;
 
