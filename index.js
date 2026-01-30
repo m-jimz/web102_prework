@@ -188,11 +188,18 @@ const descriptionContainer = document.getElementById("description-container");
 const unFundedGames = GAMES_JSON.filter(game => game.pledged < game.goal);
 const numOfUnfunded = unFundedGames.length;
 
+
 // create a string that explains the number of unfunded games using the ternary operator
 // using ternary operator I would say the NumOfUnFunded Determining whether if there is enough funds for the games
 const displayStr = 
-    `<p>A total of $${TotalRaised.toLocaleString()} has been raised for ${TotalNames} games. Currently, ${numOfUnfunded} remain unfunded. We need your 
-    your help to fund these amazing games!</p>`;
+    `<p>A total of $${TotalRaised.toLocaleString()} has been raised for ${
+
+        numOfUnfunded > 0
+        ? `Currently, ${numOfUnfunded} games remain unfunded. We need your help!`
+        : `All games have been fully funded. Thank you for your support!`} games. Currently, ${numOfUnfunded}
+
+    </p>`;
+
 
 
 // create a new DOM element containing the template string and append it to the description container
